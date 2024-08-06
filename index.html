@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadhlan Voucher</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <img src="logo1.png" width="120px" height="120px" align="left">
+      <h2>Fadhlan Voucher</h2>
+      <a onclick="showPage('homePage')">Home</a>
+      <a onclick="showPage('productsPage')">Produk</a>
+      <a onclick="showPage('transaksiPage')">Transaksi</a>
+      <a onclick="showPage('invoicePage')"></a>
+      <a onclick="showPage('kontakPage')">Kontak Kami</a>
+      <a onclick="showPage('tentangPage')">Tentang</a>
+    </nav>
+    <marquee style="font-family:Arial, sans-serif; font-size: 16px; font-weight: bold; color: #b6895b;">
+      <h4>Fadhlan Voucher Toko TopUp Tercepat!!!         Jangan Lupa Checkout ya</h4>
+    </marquee><hr>
+               
+
+    <div class="container">
+      <div class="left">
+<div class="right">
+  <h3>Voucher Tersedia</h3>
+  <div class="voucher-card">
+    <i class="fab fa-steam"></i>
+    <h3>- Steam Wallet IDR 6K</h3>
+    <h3>- Steam Wallet IDR 12K</h3>
+    <h3>- Robux 400</h3>
+    <h3>- Robux 800</h3>
+    <h3>- Robux 1200</h3>
+    
+    <h3 class="available">Stok: 100</div>
+  <h3>Voucher Habis</h3>
+  <div class="voucher-card">
+    <i class="fab fa-steam"></i>
+    <h3>-</h3>
+    <h3 class="unavailable">Habis
+  </div>
+  
+              </div>
+            </body>
+        </p>
+      </div>
+      <div class="content">
+        <div id="homePage" class="page">
+          <h2>Top Up Banyak Untung
+            Temukan voucher favorit di Fadhlan Voucher!</h2>
+          <h3>Pembelian Terbanyak Minggu Ini!</h3>
+          <img src="https://cdn.gameseal.com/media/7f/9d/cd/1675864598/Ramka%20Steam%2012_000IDR.png" width="350px" height="300px">
+          <p><button class="beli-button" onclick="showPage('transaksiPage')">Checkout</button></p><hr>
+          <h5>Apa itu Steam Wallet? Steam Wallet adalah dompet digital yang terhubung dengan akun Steam Anda. Dompet ini digunakan untuk membeli game, DLC, item dalam game, dan berbagai konten lainnya di platform Steam.
+          Fungsi Voucher Steam Wallet: Voucher Steam Wallet berfungsi sebagai saldo tambahan untuk akun Steam Anda. Dengan voucher ini, Anda bisa langsung menambah saldo Steam Wallet Anda tanpa perlu menggunakan metode pembayaran lainnya.
+          Cara Kerja: Setelah membeli voucher, Anda akan mendapatkan kode unik. Kode ini kemudian dimasukkan ke akun Steam Anda untuk menukarkannya menjadi saldo.</h5>
+
+        </div>
+        <div id="productsPage" class="page" style="display: none">
+          <ul>
+            <li>
+              <img src="https://cdn.gameseal.com/media/51/70/28/1675864663/Ramka%20Steam%206_000IDR.png">
+              <p>Steam Wallet IDR 6K</p>
+              <p><button class="beli-button" onclick="showPage('transaksiPage')">
+                Beli
+              </button></p>
+            </li>
+            <li>
+              <img src="https://cdn.gameseal.com/media/7f/9d/cd/1675864598/Ramka%20Steam%2012_000IDR.png">
+            <p>Steam Wallet IDR.12K</p>
+              <button class="beli-button" onclick="showPage('transaksiPage')">
+                Beli
+              </button>
+            </li>
+            <li>
+
+              <img src="https://cdn.gameseal.com/media/ba/3d/26/1675864644/Ramka%20Steam%2045_000IDR.png"  >
+              <p>Steam Wallet IDR 45K</p>
+              <button class="beli-button" onclick="showPage('transaksiPage')">
+                Beli
+              </button>
+            </li>
+            <li>
+              
+              <img src="https://seagm-media.seagmcdn.com/item_480/1674.png" >
+              <p>Voucher Robux 400/IDR 50K</p>
+              <button class="beli-button" onclick="showPage('transaksiPage')">
+                Beli
+              </button>
+            </li>
+            <li>
+              <img src="https://seagm-media.seagmcdn.com/item_480/1674.png">
+              <p> Voucher Robux 800/IDR 90K</p>
+              <button class="beli-button" onclick="showPage('transaksiPage')">
+                Beli
+              </button>
+            </li>
+            <li>
+              <img src="https://seagm-media.seagmcdn.com/item_480/1674.png" >
+              <p>Voucher Robux 1200/IDR 120K</p>
+              <button class="beli-button" onclick="showPage('transaksiPage')">
+                Beli
+              </button><hr>
+            </li>
+          </ul>
+        </div>
+        <div id="transaksiPage" class="page" style="display: none">
+          <h2>Isi Formulir</h2>
+          <form name="transaksiForm" onsubmit="return validateForm()">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+            <br /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <br /><br />
+
+            <label for="produk">Produk:</label>
+            <select id="produk" name="produk" required>
+              <option value="Steam Wallet 6000">Steam Wallet IDR 6K</option>
+              <option value="Steam Wallet 12000">Steam Wallet IDR 12K</option>
+              <option value="Steam Wallet 45000">Steam Wallet IDR 45K</option>
+              <option value="Voucher Robux 400">
+                Voucher Robux 400/IDR 50K
+              </option>
+              <option value="Voucher Robux 800">
+                Voucher Robux 800/IDR 90K
+              </option>
+              <option value="Voucher Robux 1200">
+                Voucher Robux 1200/IDR 120K
+              </option>
+            </select>
+            <br /><br />
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" required />
+            <br /><br />
+
+            <button type="submit">Buat Pesanan</button>
+          </form>
+        </div>
+        <div id="invoicePage" class="page" style="display: none">
+          <h2>Invoice</h2>
+          <div class="invoice-box">
+              <p>Nama: <span id="invoiceNama"></span></p>
+              <p>Email: <span id="invoiceEmail"></span></p>
+              <p>Produk: <span id="invoiceProduk"></span></p>
+              <p>Jumlah: <span id="invoiceJumlah"></span></p>
+              <p>Total: <span id="invoiceTotal"></span></p>
+          </div>
+          <button class="btn-next">Next</button>
+          <div class="proses-pesan" style="display: none;">
+              <p>Transaksi Anda sedang diproses.</p>
+              <p>Voucher Anda akan segera dikirim melalui email.</p>
+              <p>Terima kasih telah berbelanja di toko kami.</p>
+              <p>Refresh Halaman Jika anda Ingin Membeli Kembali</p>
+          </div>
+      </div>
+        <div id="kontakPage" class="page" style="display: none">
+          <h3>Kontak Kami</h3>
+          <h3>Nama: Fadhlan Firdausy Ahlan</h3>
+          <h3>NIM: 10523169</h3>
+          <h3>Kelas: IS-5</h3>
+          <h3>Email: ryuudoto@gmail.com</h3>
+          <img src="poto.png" alt="Gambar Poto" width="200" />
+        </div>
+        <div id="tentangPage" class="page" style="display: none">
+          <h2>Tentang Perusahaan</h2>
+          <h3>
+            Fadhlan Voucher adalah perusahaan yang menyediakan voucher game online dengan harga terjangkau.
+          </h3>
+          <h3>Visi: Menjadi penyedia voucher game nomor satu di Indonesia.</h3>
+          <h3>
+            Misi: Memberikan layanan terbaik dan harga yang kompetitif kepada
+            pelanggan.
+          </h3>
+        </div>
+      </div>
+      <div class="right">
+        
+
+      </div>
+    </div>
+    <footer>
+      <h3>&copy; 2024 Fadhlan Voucher </h3>
+      <div class="footer-logo">  <a href="https://www.instagram.com/fadhlanfadd/">
+          <img src="logo ig.png" alt="instagram" width="50px" height="50px" align="center">
+        </a>
+      </div>
+      <div class="hubungi-kami"> <h4>Hubungi Kami</h4>
+        <h4> WA:+62123456789</h4>
+        <h4>Email:Fadhlanvoucher@gmail.com</h4>
+        <h4>IG:@fadhlanvoucher</h4>
+      </div>
+    </footer>
+  </body>
+</html>

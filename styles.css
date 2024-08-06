@@ -1,0 +1,222 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: #fff;
+}
+nav {
+  background-color: #010101;
+  color: rgb(247, 176, 96);
+  padding: 1.4rem 10%;
+  text-align: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary);
+  position: relative;
+  border-top: 1px solid var(--primary);
+  font-style: italic;
+  
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0.3rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  content: '';
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+}
+.container {
+  display: flex;
+  padding: 1em;
+  
+}
+.left,
+.right {
+  flex: 1;
+  min-width: 200px;
+  margin: 0.5em;
+  text-align: justify;
+  background-color: #000000;
+  position: sticky;
+  top: 20px; /
+}
+.content {
+  background-color: #010101;
+  padding: 1em;
+  flex: 3;
+  margin: 0.5em;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 1em;
+}
+.invoice-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+}
+footer {
+  
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; 
+}
+.hubungi-kami {
+
+  display: inline-block; 
+  vertical-align: top; 
+  text-align: left;
+}
+
+.hubungi-kami h4 {
+
+  margin-bottom: 5px; 
+}
+footer a {
+  color: rgb(37, 33, 33);
+}
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.beli-button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 40px;
+  background-color: #fd0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
+#productsPage {
+  text-align: center;
+}
+
+#productsPage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#productsPage li {
+  margin-bottom: 20px;
+}
+
+#productsPage img {
+  width: auto;
+  height: auto;
+  margin: 10px auto;
+
+}
+
+#productsPage .beli-button {
+  background-color: #ff0800;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+style>
+  .voucher-card {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .voucher-card:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+
+  .available {
+    color: green;
+  }
+
+  .unavailable {
+    color: red;
+  }
+
+h5 {
+  margin: 16px;
+  border-radius: px;
+  background-color:#13141E;
+  height:100px;
+  position:left;
+  color: #AAADBE;
+  font-size: 16px;
+}
+#transaksiPage form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  float:left;
+  
+}
+
+#transaksiPage label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#transaksiPage input[type="text"],
+#transaksiPage input[type="email"],
+#transaksiPage input[type="number"],
+#transaksiPage select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#transaksiPage button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#transaksiPage button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+.btn-next {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+}
+
+.proses-pesan {
+  text-align: center;
+  margin-top: 20px;
+}
